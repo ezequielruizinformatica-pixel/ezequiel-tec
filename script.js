@@ -1,15 +1,17 @@
 function mostrarAluno() {
-  document.getElementById("inicio").classList.add("escondido");
-  document.getElementById("aluno").classList.remove("escondido");
+  trocarTela("inicio", "aluno");
 }
 
 function mostrarVisitante() {
-  document.getElementById("inicio").classList.add("escondido");
-  document.getElementById("visitante").classList.remove("escondido");
+  trocarTela("inicio", "visitante");
 }
 
 function voltar() {
-  document.getElementById("aluno").classList.add("escondido");
-  document.getElementById("visitante").classList.add("escondido");
-  document.getElementById("inicio").classList.remove("escondido");
+  trocarTela("aluno", "inicio");
+  trocarTela("visitante", "inicio");
+}
+
+function trocarTela(sair, entrar) {
+  document.getElementById(sair).classList.add("escondido");
+  document.getElementById(entrar).classList.remove("escondido");
 }
