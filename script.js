@@ -59,6 +59,7 @@ function capturar() {
 }
 
 function gerarQR(dado) {
+  console.log("Gerando QR...");
   document.getElementById("qrcode").innerHTML = "";
   new QRCode(document.getElementById("qrcode"), dado);
 }
