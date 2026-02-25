@@ -1,32 +1,28 @@
-function mostrarAluno() {
-  trocarTela("inicio", "aluno");
-}
+document.addEventListener("DOMContentLoaded", function () {
 
-function mostrarVisitante() {
-  trocarTela("inicio", "visitante");
-}
+    const tipo = document.getElementById("tipo");
+    const nome = document.getElementById("nome");
+    const botao = document.getElementById("btnEnviar");
 
-function voltar() {
-  document.getElementById("aluno").classList.add("escondido");
-  document.getElementById("visitante").classList.add("escondido");
-  document.getElementById("inicio").classList.remove("escondido");
-}
+    botao.addEventListener("click", function () {
 
-function trocarTela(sair, entrar) {
-  document.getElementById(sair).classList.add("escondido");
-  document.getElementById(entrar).classList.remove("escondido");
-}
+        if (!tipo.value || !nome.value) {
+            alert("Preencha todas as informações.");
+            return;
+        }
 
-function voltarAutomatico() {
-  setTimeout(() => {
-    document.getElementById("aluno").classList.add("escondido");
-    document.getElementById("visitante").classList.add("escondido");
-    document.getElementById("inicio").classList.remove("escondido");
-  }, 5000);
-}
+        const dados = {
+            tipo: tipo.value,
+            nome: nome.value
+        };
 
-let stream;
-  console.log("Gerando QR...");
-  document.getElementById("qrcode").innerHTML = "";
-  new QRCode(document.getElementById("qrcode"), dado);
-}
+        console.log("Dados enviados:", dados);
+
+        alert("Cadastro realizado com sucesso!");
+
+        // Limpa os campos
+        tipo.value = "";
+        nome.value = "";
+    });
+
+});
