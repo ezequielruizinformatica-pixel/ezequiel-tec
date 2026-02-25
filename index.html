@@ -1,113 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gerador de QR - Escola</title>
-
-<script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
-
-<style>
-body{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: #f4f6f9;
-}
-
-.container{
-    background: white;
-    width: 350px;
-    margin: 40px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-select, input, button{
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-button{
-    background: #2e86de;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover{
-    background: #1b4f72;
-}
-
-#qrcode{
-    margin-top: 20px;
-}
-
-#downloadBtn{
-    display: none;
-    background: #27ae60;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Ezequiel Tec</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
-    <h2>Gerar QR Code</h2>
-
-    <select id="tipo">
-        <option value="">Selecione</option>
-        <option value="Aluno">Aluno</option>
-        <option value="Visitante">Visitante</option>
-    </select>
-
-    <input type="text" id="nome" placeholder="Digite o nome">
-
-    <button onclick="gerarQR()">Gerar QR Code</button>
-
-    <div id="qrcode"></div>
-
-    <button id="downloadBtn" onclick="baixarQR()">Baixar QR Code</button>
+<div id="inicio" class="tela">
+  <h1>🤖 OLÁ, SOU O EZEQUIEL TEC</h1>
+  <p>Quem é você?</p>
+  <button onclick="mostrarAluno()">🎒 Sou Aluno</button>
+  <button onclick="mostrarVisitante()">👩‍💼 Sou Visitante</button>
 </div>
 
-<script>
-let qrCode;
+<div id="aluno" class="tela escondido">
+  <h2>Como você está hoje?</h2>
+  <button>😀 Feliz</button>
+  <button>😐 Normal</button>
+  <button>😔 Triste</button>
+  <button onclick="voltar()">⬅ Voltar</button>
+</div>
 
-function gerarQR(){
-    const tipo = document.getElementById("tipo").value;
-    const nome = document.getElementById("nome").value;
+<div id="visitante" class="tela escondido">
+  <h2>Qual o motivo da visita?</h2>
+  <button>Matrícula</button>
+  <button>Reunião</button>
+  <button>Outro</button>
+  <button onclick="voltar()">⬅ Voltar</button>
+</div>
 
-    if(!tipo || !nome){
-        alert("Preencha todas as informações.");
-        return;
-    }
-
-    const dados = tipo + " - " + nome;
-
-    document.getElementById("qrcode").innerHTML = "";
-
-    qrCode = new QRCode(document.getElementById("qrcode"), {
-        text: dados,
-        width: 200,
-        height: 200
-    });
-
-    setTimeout(() => {
-        document.getElementById("downloadBtn").style.display = "block";
-    }, 300);
-}
-
-function baixarQR(){
-    const img = document.querySelector("#qrcode img");
-    const link = document.createElement("a");
-    link.href = img.src;
-    link.download = "qrcode.png";
-    link.click();
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
