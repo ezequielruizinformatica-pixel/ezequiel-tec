@@ -1,28 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const tipo = document.getElementById("tipo");
-    const nome = document.getElementById("nome");
-    const botao = document.getElementById("btnEnviar");
+    const inicio = document.getElementById("inicio");
+    const aluno = document.getElementById("aluno");
+    const visitante = document.getElementById("visitante");
 
-    botao.addEventListener("click", function () {
+    window.mostrarAluno = function () {
+        inicio.classList.add("escondido");
+        visitante.classList.add("escondido");
+        aluno.classList.remove("escondido");
+    }
 
-        if (!tipo.value || !nome.value) {
-            alert("Preencha todas as informações.");
-            return;
-        }
+    window.mostrarVisitante = function () {
+        inicio.classList.add("escondido");
+        aluno.classList.add("escondido");
+        visitante.classList.remove("escondido");
+    }
 
-        const dados = {
-            tipo: tipo.value,
-            nome: nome.value
-        };
-
-        console.log("Dados enviados:", dados);
-
-        alert("Cadastro realizado com sucesso!");
-
-        // Limpa os campos
-        tipo.value = "";
-        nome.value = "";
-    });
+    window.voltar = function () {
+        aluno.classList.add("escondido");
+        visitante.classList.add("escondido");
+        inicio.classList.remove("escondido");
+    }
 
 });
