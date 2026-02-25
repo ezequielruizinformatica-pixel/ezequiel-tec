@@ -7,8 +7,10 @@ function mostrarVisitante() {
 }
 
 function voltar() {
-  trocarTela("aluno", "inicio");
-  trocarTela("visitante", "inicio");
+  document.getElementById("aluno").classList.add("escondido");
+  document.getElementById("visitante").classList.add("escondido");
+  document.getElementById("foto").classList.add("escondido");
+  document.getElementById("inicio").classList.remove("escondido");
 }
 
 function trocarTela(sair, entrar) {
@@ -27,8 +29,7 @@ function voltarAutomatico() {
 let stream;
 
 function abrirFoto() {
-  esconderTodas();
-  document.getElementById("foto").classList.remove("escondido");
+  trocarTela("inicio", "foto");
 
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(s => {
