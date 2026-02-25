@@ -8,10 +8,13 @@
 <body>
 
 <div id="inicio" class="tela">
-  <h1>🤖 OLÁ, MEU NOME É EZEQUIEL TEC</h1>
+  <h1>🤖 OLÁ, SOU O EZEQUIEL TEC</h1>
   <p style="font-size:18px;">Bem-vindo! Toque na opção abaixo:</p>
   <button onclick="mostrarAluno()">🎒 Sou Aluno</button>
   <button onclick="mostrarVisitante()">👩‍💼 Sou Visitante</button>
+  <button onclick="abrirFoto()" class="botao">
+    📸 Tirar Foto
+</button>
 </div>
 
 <div id="aluno" class="tela escondido">
@@ -29,7 +32,26 @@
   <button>Outro</button>
   <button onclick="voltar()">⬅ Voltar</button>
 </div>
+<div id="foto" class="tela escondido">
+  <h2>Tire sua foto 📸</h2>
 
+  <video id="camera" autoplay style="width:80%; border-radius:15px;"></video>
+
+  <br><br>
+
+  <button onclick="capturar()">📷 Capturar</button>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <br>
+
+  <img id="preview" style="width:80%; margin-top:15px; border-radius:15px;" />
+
+  <div id="qrcode" style="margin-top:20px;"></div>
+
+  <br>
+  <button onclick="voltar()">⬅ Voltar</button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
