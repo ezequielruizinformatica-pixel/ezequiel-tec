@@ -55,6 +55,12 @@ function capturar() {
     stream.getTracks().forEach(track => track.stop());
   }
 
+  const imagem = canvas.toDataURL("image/png");
+document.getElementById("preview").src = imagem;
+
+const link = imagem; // temporário para teste
+gerarQR(link);
+  
   gerarQR(imagem);
 }
 
