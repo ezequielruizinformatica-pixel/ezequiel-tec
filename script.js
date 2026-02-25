@@ -1,3 +1,4 @@
+console.log("SCRIPT CARREGANDO");
 document.addEventListener("DOMContentLoaded", function () {
 
     const inicio = document.getElementById("inicio");
