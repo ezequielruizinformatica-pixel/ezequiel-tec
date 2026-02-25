@@ -1,26 +1,17 @@
-console.log("SCRIPT CARREGANDO");
-document.addEventListener("DOMContentLoaded", function () {
+function mostrarAluno() {
+    document.getElementById("inicio").classList.add("escondido");
+    document.getElementById("visitante").classList.add("escondido");
+    document.getElementById("aluno").classList.remove("escondido");
+}
 
-    const inicio = document.getElementById("inicio");
-    const aluno = document.getElementById("aluno");
-    const visitante = document.getElementById("visitante");
+function mostrarVisitante() {
+    document.getElementById("inicio").classList.add("escondido");
+    document.getElementById("aluno").classList.add("escondido");
+    document.getElementById("visitante").classList.remove("escondido");
+}
 
-    window.mostrarAluno = function () {
-        inicio.classList.add("escondido");
-        visitante.classList.add("escondido");
-        aluno.classList.remove("escondido");
-    }
-
-    window.mostrarVisitante = function () {
-        inicio.classList.add("escondido");
-        aluno.classList.add("escondido");
-        visitante.classList.remove("escondido");
-    }
-
-    window.voltar = function () {
-        aluno.classList.add("escondido");
-        visitante.classList.add("escondido");
-        inicio.classList.remove("escondido");
-    }
-
-});
+function voltar() {
+    document.getElementById("aluno").classList.add("escondido");
+    document.getElementById("visitante").classList.add("escondido");
+    document.getElementById("inicio").classList.remove("escondido");
+}
