@@ -53,3 +53,54 @@ button:active {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.titulo {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.painel-botoes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 220px;
+  height: 220px;
+  font-size: 28px;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.btn span {
+  font-size: 22px;
+}
+
+.btn.aluno {
+  background: linear-gradient(145deg, #ff9800, #ff6f00);
+  color: white;
+}
+
+.btn.visitante {
+  background: linear-gradient(145deg, #4caf50, #2e7d32);
+  color: white;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
