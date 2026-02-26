@@ -26,20 +26,56 @@
   
 <div id="aluno" class="tela escondido">
   <h2>Como você está hoje?</h2>
-  <button>😀 Feliz</button>
-  <button>😐 Normal</button>
-  <button>😔 Triste</button>
- <button onclick="voltar()">⬅ Voltar</button>
+
+  <div class="painel-botoes">
+    <button class="btn opcao feliz">
+      😀
+      <span>Feliz</span>
+    </button>
+
+    <button class="btn opcao normal">
+      😐
+      <span>Normal</span>
+    </button>
+
+    <button class="btn opcao triste">
+      😔
+      <span>Triste</span>
+    </button>
+  </div>
+
+  <button class="btn voltar" onclick="voltar()">
+    ⬅
+    <span>Voltar</span>
+  </button>
 </div>
+  
 
 <div id="visitante" class="tela escondido">
   <h2>Qual o motivo da visita?</h2>
-  <button>Matrícula</button>
-  <button>Reunião</button>
-  <button>Outro</button>
- <button onclick="voltar()">⬅ Voltar</button>
-</div>
 
+  <div class="painel-botoes">
+    <button class="btn opcao matricula">
+      📝
+      <span>Matrícula</span>
+    </button>
+
+    <button class="btn opcao reuniao">
+      🤝
+      <span>Reunião</span>
+    </button>
+
+    <button class="btn opcao outro">
+      ❓
+      <span>Outro</span>
+    </button>
+  </div>
+
+  <button class="btn voltar" onclick="voltar()">
+    ⬅
+    <span>Voltar</span>
+  </button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
