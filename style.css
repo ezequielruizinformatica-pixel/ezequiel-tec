@@ -27,23 +27,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-button {
-  width: 100%;
-  padding: 20px;
-  margin: 15px 0;
-  font-size: 20px;
-  border-radius: 15px;
-  border: none;
-  background-color: white;
-  color: #0d47a1;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-button:active {
-  transform: scale(0.97);
-  background-color: #e3f2fd;
-}
 
 .escondido {
   display: none;
