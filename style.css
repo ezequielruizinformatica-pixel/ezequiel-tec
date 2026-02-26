@@ -104,3 +104,22 @@ h2 {
   cursor: pointer;
   transform: scale(1.05);
 }
+
+.feliz {
+  width: 100px;
+  height: 100px;
+}
+
+.normal {
+  width: 100px;
+  height: 100px;
+}
+
+.triste {
+  width: 100px;
+  height: 100px;
+}
+.voltar {
+  width: 100px;
+  height: 100px;
+}
