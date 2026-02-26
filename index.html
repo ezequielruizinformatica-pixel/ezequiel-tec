@@ -9,12 +9,21 @@
 <body>
 
 <div id="inicio" class="tela">
-  <h1>🤖 OLÁ, SOU O EZEQUIEL TEC</h1>
-  <p>Quem é você?</p>
-  <button onclick="mostrarAluno()">🎒 Sou Aluno</button>
-  <button onclick="mostrarVisitante()">👩‍💼 Sou Visitante</button>
-</div>
+  <h1 class="titulo">Olá! Quem é você?</h1>
 
+  <div class="painel-botoes">
+    <button class="btn aluno" onclick="mostrarTela('aluno')">
+      🎒
+      <span>Sou Aluno</span>
+    </button>
+
+    <button class="btn visitante" onclick="mostrarTela('visitante')">
+      👔
+      <span>Sou Visitante</span>
+    </button>
+  </div>
+</div>
+  
 <div id="aluno" class="tela escondido">
   <h2>Como você está hoje?</h2>
   <button>😀 Feliz</button>
