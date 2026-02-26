@@ -55,7 +55,7 @@ button:active {
 }
 
 .titulo {
-  font-size: 32px;
+  font-size: 48px;
   margin-bottom: 40px;
 }
 
@@ -67,9 +67,9 @@ button:active {
 }
 
 .btn {
-  width: 220px;
-  height: 220px;
-  font-size: 28px;
+  width: 280px;
+  height: 280px;
+  font-size: 40px;
   border-radius: 25px;
   border: none;
   display: flex;
@@ -83,7 +83,7 @@ button:active {
 }
 
 .btn span {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 .btn.aluno {
