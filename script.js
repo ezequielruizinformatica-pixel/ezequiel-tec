@@ -15,3 +15,16 @@ function voltar() {
     document.getElementById("visitante").classList.add("escondido");
     document.getElementById("inicio").classList.remove("escondido");
 }
+
+function mostrarMapa(titulo, imagem) {
+    document.getElementById("visitante").classList.add("escondido");
+    document.getElementById("mapa").classList.remove("escondido");
+
+    document.getElementById("titulo-mapa").innerText = titulo;
+    document.getElementById("imagem-mapa").src = imagem;
+}
+
+function voltarParaVisitante() {
+    document.getElementById("mapa").classList.add("escondido");
+    document.getElementById("visitante").classList.remove("escondido");
+}
