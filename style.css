@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: 
-    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+
+  background:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
     url("./fundo.png") center/cover no-repeat fixed;
 
   display: flex;
@@ -12,12 +13,13 @@ body {
   color: white;
 }
 
+/* ================= TELA ================= */
+
 .tela {
   width: 90%;
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
   animation: fade 0.4s ease-in-out;
-  transform: translateY(40px);
 }
 
 .escondido {
@@ -29,21 +31,24 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ================= TÍTULOS ================= */
+
 .titulo {
-  font-size: 52px;
-  margin-bottom: 40px;
-  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+  font-size: 56px;
+  margin-bottom: 50px;
+  text-shadow: 0 5px 20px rgba(0,0,0,0.9);
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 40px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
 }
 
 /* ================= BOTÕES BASE ================= */
 
 .btn {
-  font-size: 28px;
+  font-size: 26px;
   border-radius: 25px;
   border: none;
   display: flex;
@@ -53,7 +58,7 @@ h2 {
   gap: 12px;
   font-weight: bold;
   transition: 0.2s;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   cursor: pointer;
 }
 
@@ -73,7 +78,7 @@ h2 {
 
 .painel-botoes {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -84,16 +89,15 @@ h2 {
 .visitante {
   width: 260px;
   height: 260px;
+  color: white;
 }
 
 .aluno {
   background: linear-gradient(145deg, #ff9800, #ff6f00);
-  color: white;
 }
 
 .visitante {
   background: linear-gradient(145deg, #4caf50, #2e7d32);
-  color: white;
 }
 
 /* ================= OPÇÕES ================= */
@@ -133,7 +137,7 @@ h2 {
 .voltar {
   width: 130px;
   height: 130px;
-  margin: 40px auto 0 auto;
+  margin: 50px auto 0 auto;
   border-radius: 50%;
   background: linear-gradient(145deg, #616161, #212121);
   color: white;
