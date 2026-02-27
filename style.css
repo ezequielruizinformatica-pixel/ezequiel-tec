@@ -170,3 +170,11 @@ h2 {
 .quadra {
   background: linear-gradient(145deg, #ef5350, #b71c1c);
 }
+
+.painel-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* impede quebrar linha */
+}
