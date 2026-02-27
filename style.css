@@ -119,11 +119,7 @@ h2 {
   height: 160px;
 }
 
-.voltar {
-  width: 160px;
-  height: 160px;
-  margin-top: 26px;
-}
+
 
 .normal {
   width: 160px;
@@ -136,3 +132,15 @@ h2 {
 }
 
 
+.voltar {
+  width: 160px;
+  height: 160px;
+  margin: 40px auto 0 auto;  /* centraliza */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #616161, #212121);
+  color: white;
+  font-size: 22px;
+}
