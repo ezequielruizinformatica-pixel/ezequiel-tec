@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<!-- ================= TELA INICIAL ================= -->
+
 <div id="inicio" class="tela">
   <h1 class="titulo">Olá! Quem é você?</h1>
 
@@ -17,13 +19,15 @@
       <span>Sou Aluno</span>
     </button>
 
-   <button class="btn visitante" onclick="mostrarVisitante()">
+    <button class="btn visitante" onclick="mostrarVisitante()">
       👔
       <span>Sou Visitante</span>
     </button>
   </div>
 </div>
-  
+
+<!-- ================= TELA ALUNO ================= -->
+
 <div id="aluno" class="tela escondido">
   <h2>Como você está hoje?</h2>
 
@@ -45,10 +49,13 @@
   </div>
 
   <button class="btn voltar" onclick="voltar()">
-  ⬅
-  <span>Voltar</span>
-</button>
-  
+    ⬅
+    <span>Voltar</span>
+  </button>
+</div>
+
+<!-- ================= TELA VISITANTE ================= -->
+
 <div id="visitante" class="tela escondido">
   <h2>Qual o motivo da visita?</h2>
 
@@ -63,18 +70,18 @@
       <span>Reunião</span>
     </button>
 
-   <button class="btn voltar" onclick="voltar()">
-  ⬅
-  <span>Voltar</span>
-</button>
+    <button class="btn opcao outro">
+      ❓
+      <span>Outro</span>
+    </button>
+  </div>
 
-</div> <!-- FECHA A DIV DO ALUNO AQUI -->
-
-<div id="visitante" class="tela escondido">
+  <button class="btn voltar" onclick="voltar()">
+    ⬅
+    <span>Voltar</span>
   </button>
 </div>
 
-  
 <script src="script.js"></script>
 </body>
 </html>
