@@ -146,3 +146,27 @@ h2 {
   color: white;
   font-size: 20px;
 }
+
+.secretaria {
+  background: linear-gradient(145deg, #42a5f5, #1565c0);
+}
+
+.diretoria {
+  background: linear-gradient(145deg, #66bb6a, #2e7d32);
+}
+
+.professores {
+  background: linear-gradient(145deg, #ab47bc, #6a1b9a);
+}
+
+.salas {
+  background: linear-gradient(145deg, #ffa726, #ef6c00);
+}
+
+.banheiros {
+  background: linear-gradient(145deg, #26c6da, #00838f);
+}
+
+.quadra {
+  background: linear-gradient(145deg, #ef5350, #b71c1c);
+}
