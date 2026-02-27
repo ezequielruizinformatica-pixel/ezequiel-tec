@@ -80,10 +80,12 @@ h2 {
 /* ================= PAINEL ================= */
 
 .painel-botoes {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* ================= TELA INICIAL ================= */
@@ -171,10 +173,4 @@ h2 {
   background: linear-gradient(145deg, #ef5350, #b71c1c);
 }
 
-.painel-botoes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: nowrap; /* impede quebrar linha */
-}
+
