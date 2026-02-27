@@ -12,21 +12,10 @@ body {
 
 .tela {
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
   animation: fade 0.4s ease-in-out;
 }
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
 
 .escondido {
   display: none;
@@ -42,6 +31,42 @@ h2 {
   margin-bottom: 40px;
 }
 
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* ================= BOTÕES BASE ================= */
+
+.btn {
+  font-size: 28px;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn span {
+  font-size: 22px;
+}
+
+/* ================= PAINEL ================= */
+
 .painel-botoes {
   display: flex;
   gap: 30px;
@@ -49,59 +74,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-.btn {
-  font-size: 40px;
-  border-radius: 25px;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  font-weight: bold;
-  transition: 0.2s;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.btn span {
-  font-size: 28px;
-}
-
-.btn.aluno {
-  background: linear-gradient(145deg, #ff9800, #ff6f00);
-  color: white;
-}
-
-.btn.visitante {
-  background: linear-gradient(145deg, #4caf50, #2e7d32);
-  color: white;
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-
-.opcao {
-  width: 220px;
-  height: 220px;
-}
-
-.feliz { background: linear-gradient(145deg, #ffb300, #ff6f00); }
-.normal { background: linear-gradient(145deg, #29b6f6, #0288d1); }
-.triste { background: linear-gradient(145deg, #ab47bc, #6a1b9a); }
-
-.matricula { background: linear-gradient(145deg, #26c6da, #00838f); }
-.reuniao { background: linear-gradient(145deg, #66bb6a, #2e7d32); }
-.outro { background: linear-gradient(145deg, #ef5350, #b71c1c); }
-
-.voltar {
-  margin-top: 40px;
-  background: linear-gradient(145deg, #616161, #212121);
-}
-.btn:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
+/* ================= TELA INICIAL ================= */
 
 .aluno,
 .visitante {
@@ -109,38 +82,56 @@ h2 {
   height: 260px;
 }
 
+.aluno {
+  background: linear-gradient(145deg, #ff9800, #ff6f00);
+  color: white;
+}
+
+.visitante {
+  background: linear-gradient(145deg, #4caf50, #2e7d32);
+  color: white;
+}
+
+/* ================= OPÇÕES ================= */
+
 .opcao {
   width: 180px;
   height: 180px;
+  color: white;
 }
 
 .feliz {
-  width: 160px;
-  height: 160px;
+  background: linear-gradient(145deg, #ffb300, #ff6f00);
 }
 
-
-
 .normal {
-  width: 160px;
-  height: 160px;
+  background: linear-gradient(145deg, #29b6f6, #0288d1);
 }
 
 .triste {
-  width: 160px;
-  height: 160px;
+  background: linear-gradient(145deg, #ab47bc, #6a1b9a);
 }
 
+.matricula {
+  background: linear-gradient(145deg, #26c6da, #00838f);
+}
+
+.reuniao {
+  background: linear-gradient(145deg, #66bb6a, #2e7d32);
+}
+
+.outro {
+  background: linear-gradient(145deg, #ef5350, #b71c1c);
+}
+
+/* ================= BOTÃO VOLTAR ================= */
 
 .voltar {
-  width: 160px;
-  height: 160px;
-  margin: 40px auto 0 auto;  /* centraliza */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin: 40px auto 0 auto;
   border-radius: 50%;
   background: linear-gradient(145deg, #616161, #212121);
   color: white;
-  font-size: 22px;
+  font-size: 20px;
 }
