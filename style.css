@@ -205,3 +205,15 @@ h2 {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.edfisica {
+  background: linear-gradient(145deg, #00c853, #1b5e20);
+}
+
+.artes {
+  background: linear-gradient(145deg, #ff4081, #ad1457);
+}
+
+.religioso {
+  background: linear-gradient(145deg, #7e57c2, #4527a0);
+}
