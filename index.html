@@ -11,7 +11,7 @@
 <!-- ================= TELA INICIAL ================= -->
 
 <div id="inicio" class="tela">
-  <h1 class="titulo">Olá, me chamo ezequiel Tec. Quem é você?</h1>
+  <h1 class="titulo">Olá, me chamo Ezequiel Tec. Quem é você?</h1>
 
   <div class="painel-botoes">
     <button class="btn aluno" onclick="mostrarAluno()">
@@ -32,7 +32,7 @@
   <h2>Como você está hoje?</h2>
 
   <div class="painel-botoes">
-     <button class="btn opcao feliz" onclick="irParaMateria()">
+    <button class="btn opcao feliz" onclick="irParaMateria()">
       😀
       <span>Feliz</span>
     </button>
@@ -53,86 +53,62 @@
     <span>Voltar</span>
   </button>
 </div>
-</div>
 
-   <div id="materia" class="tela escondido">
+<!-- ================= TELA MATÉRIA ================= -->
+
+<div id="materia" class="tela escondido">
   <h2>Qual é sua matéria favorita?</h2>
 
   <div class="painel-botoes">
+    <button class="btn opcao portugues">📖<span>Português</span></button>
+    <button class="btn opcao matematica">➗<span>Matemática</span></button>
+    <button class="btn opcao ciencias">🔬<span>Ciências</span></button>
+    <button class="btn opcao historia">🏺<span>História</span></button>
+    <button class="btn opcao geografia">🌎<span>Geografia</span></button>
+    <button class="btn opcao ingles">🇺🇸<span>Inglês</span></button>
+  </div>
 
-    <button class="btn opcao portugues">
-      📖
-      <span>Português</span>
-    </button>
+  <button class="btn voltar" onclick="voltarParaAluno()">
+    ⬅
+    <span>Voltar</span>
+  </button>
+</div>
 
-    <button class="btn opcao matematica">
-      ➗
-      <span>Matemática</span>
-    </button>
-
-    <button class="btn opcao ciencias">
-      🔬
-      <span>Ciências</span>
-    </button>
-
-    <button class="btn opcao historia">
-      🏺
-      <span>História</span>
-    </button>
-
-    <button class="btn opcao geografia">
-      🌎
-      <span>Geografia</span>
-    </button>
-
-    <button class="btn opcao ingles">
-      🇺🇸
-      <span>Inglês</span>
-    </button>
-  
 <!-- ================= TELA VISITANTE ================= -->
 
 <div id="visitante" class="tela escondido">
   <h2>Para onde você deseja ir?</h2>
 
   <div class="painel-botoes">
-
     <button class="btn opcao diretoria"
             onclick="mostrarMapa('Diretoria', 'diretoria.jpeg')">
-      👔
-      <span>Diretoria</span>
+      👔<span>Diretoria</span>
     </button>
 
     <button class="btn opcao secretaria"
             onclick="mostrarMapa('Secretaria', 'secretaria.jpeg')">
-      🏢
-      <span>Secretaria</span>
+      🏢<span>Secretaria</span>
     </button>
 
     <button class="btn opcao professores"
             onclick="mostrarMapa('Sala dos Professores', 'professores.jpeg')">
-      👩‍🏫
-      <span>Sala dos Professores</span>
+      👩‍🏫<span>Sala dos Professores</span>
     </button>
 
     <button class="btn opcao salas"
             onclick="mostrarMapa('Salas de Aula', 'salas.png')">
-      📚
-      <span>Salas de Aula</span>
+      📚<span>Salas de Aula</span>
     </button>
 
     <button class="btn opcao banheiros"
             onclick="mostrarMapa('Banheiros', 'banheiros.jpeg')">
-      🚻
-      <span>Banheiros</span>
+      🚻<span>Banheiros</span>
     </button>
 
     <button class="btn opcao quadra"
             onclick="mostrarMapa('Quadra da Escola', 'quadra.png')">
-      🏀
-      <span>Quadra da Escola</span>
+      🏀<span>Quadra da Escola</span>
     </button>
-
   </div>
 
   <button class="btn voltar" onclick="voltar()">
@@ -140,19 +116,21 @@
     <span>Voltar</span>
   </button>
 </div>
+
 <!-- ================= TELA MAPA ================= -->
 
 <div id="mapa" class="tela escondido">
   <h2 id="titulo-mapa">Local</h2>
 
-  <img id="imagem-mapa" src="" alt="Mapa do local" style="max-width: 100%; border-radius: 20px; margin-top: 20px;">
+  <img id="imagem-mapa" src="" alt="Mapa do local"
+       style="max-width: 100%; border-radius: 20px; margin-top: 20px;">
 
   <button class="btn voltar" onclick="voltarParaVisitante()">
     ⬅
     <span>Voltar</span>
   </button>
 </div>
-  
+
 <script src="script.js"></script>
 </body>
 </html>
