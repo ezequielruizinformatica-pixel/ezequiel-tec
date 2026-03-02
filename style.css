@@ -174,3 +174,26 @@ h2 {
 }
 
 
+.portugues {
+  background: linear-gradient(145deg, #42a5f5, #1565c0);
+}
+
+.matematica {
+  background: linear-gradient(145deg, #66bb6a, #2e7d32);
+}
+
+.ciencias {
+  background: linear-gradient(145deg, #ab47bc, #6a1b9a);
+}
+
+.historia {
+  background: linear-gradient(145deg, #ffa726, #ef6c00);
+}
+
+.geografia {
+  background: linear-gradient(145deg, #26c6da, #00838f);
+}
+
+.ingles {
+  background: linear-gradient(145deg, #ef5350, #b71c1c);
+}
