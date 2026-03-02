@@ -197,3 +197,11 @@ h2 {
 .ingles {
   background: linear-gradient(145deg, #ef5350, #b71c1c);
 }
+
+#materia .painel-botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
