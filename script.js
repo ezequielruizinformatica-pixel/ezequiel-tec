@@ -24,6 +24,15 @@ function mostrarMapa(titulo, imagem) {
     document.getElementById("imagem-mapa").src = imagem;
 }
 
+function irParaMateria() {
+    document.getElementById("aluno").classList.add("escondido");
+    document.getElementById("materia").classList.remove("escondido");
+}
+
+function voltarParaAluno() {
+    document.getElementById("materia").classList.add("escondido");
+    document.getElementById("aluno").classList.remove("escondido");
+}
 function voltarParaVisitante() {
     document.getElementById("mapa").classList.add("escondido");
     document.getElementById("visitante").classList.remove("escondido");
