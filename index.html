@@ -88,21 +88,28 @@
   <!-- ================= TELA TURNO ================= -->
 
 <div id="turno" class="tela escondido">
+
   <h2>Seu professor favorito é de qual turno?</h2>
 
   <div class="painel-botoes">
 
-  <button class="btn opcao matutino" onclick="irParaProfessor('matutino')">
-🌅 Matutino
-</button>
+    <button class="btn opcao matutino" onclick="irParaProfessor('matutino')">
+      🌅
+      <span>Matutino</span>
+    </button>
 
-<button class="btn opcao vespertino" onclick="irParaProfessor('vespertino')">
-🌇 Vespertino
-</button>
+    <button class="btn opcao vespertino" onclick="irParaProfessor('vespertino')">
+      🌇
+      <span>Vespertino</span>
+    </button>
+
+  </div>
+
   <button class="btn voltar" onclick="voltarParaMateria()">
     ⬅
     <span>Voltar</span>
   </button>
+
 </div>
   
   <!-- ================= TELA PROFESSOR ================= -->
