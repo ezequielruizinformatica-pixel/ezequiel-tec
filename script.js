@@ -64,18 +64,17 @@ function irParaProfessor(turno) {
     const matutino = document.getElementById("professores-matutino");
     const vespertino = document.getElementById("professores-vespertino");
 
+    // abre a tela de professor
     telaProfessor.classList.remove("escondido");
 
-    // esconder os dois
+    // garante que os dois grupos começam escondidos
     matutino.classList.add("escondido");
     vespertino.classList.add("escondido");
 
-    // mostrar apenas o escolhido
+    // mostra apenas o grupo correto
     if (turno === "matutino") {
         matutino.classList.remove("escondido");
-    }
-
-    if (turno === "vespertino") {
+    } else if (turno === "vespertino") {
         vespertino.classList.remove("escondido");
     }
 }
