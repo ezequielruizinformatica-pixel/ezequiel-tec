@@ -56,11 +56,23 @@ function voltarParaMateria() {
     document.getElementById("materia").classList.remove("escondido");
 }
 
-function irParaProfessor() {
-    esconderTodas();
-    document.getElementById("professor").classList.remove("escondido");
-}
+function irParaProfessor(turno) {
 
+    esconderTodas();
+
+    document.getElementById("professor").classList.remove("escondido");
+
+    document.getElementById("professores-matutino").classList.add("escondido");
+    document.getElementById("professores-vespertino").classList.add("escondido");
+
+    if(turno === "matutino"){
+        document.getElementById("professores-matutino").classList.remove("escondido");
+    }
+
+    if(turno === "vespertino"){
+        document.getElementById("professores-vespertino").classList.remove("escondido");
+    }
+}
 function voltarParaTurno() {
     esconderTodas();
     document.getElementById("turno").classList.remove("escondido");
