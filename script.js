@@ -75,6 +75,7 @@ function irParaProfessor(turno) {
         document.getElementById("professores-vespertino").classList.remove("escondido");
     }
 }
+
 function voltarParaTurno() {
     esconderTodas();
     document.getElementById("turno").classList.remove("escondido");
