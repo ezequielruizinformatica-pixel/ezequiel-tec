@@ -60,22 +60,23 @@ function irParaProfessor(turno) {
 
     esconderTodas();
 
-    const telaProfessor = document.getElementById("professor");
+    const tela = document.getElementById("professor");
     const matutino = document.getElementById("professores-matutino");
     const vespertino = document.getElementById("professores-vespertino");
 
-    // abre a tela de professor
-    telaProfessor.classList.remove("escondido");
+    tela.classList.remove("escondido");
 
-    // garante que os dois grupos começam escondidos
-    matutino.classList.add("escondido");
-    vespertino.classList.add("escondido");
+    // esconder os dois grupos primeiro
+    matutino.style.display = "none";
+    vespertino.style.display = "none";
 
-    // mostra apenas o grupo correto
+    // mostrar apenas o grupo escolhido
     if (turno === "matutino") {
-        matutino.classList.remove("escondido");
-    } else if (turno === "vespertino") {
-        vespertino.classList.remove("escondido");
+        matutino.style.display = "grid";
+    }
+
+    if (turno === "vespertino") {
+        vespertino.style.display = "grid";
     }
 }
 function voltarParaTurno() {
