@@ -60,19 +60,23 @@ function irParaProfessor(turno) {
 
     esconderTodas();
 
+    // abre a tela de professor
     document.getElementById("professor").classList.remove("escondido");
 
-    // esconder todos os grupos primeiro
-    document.getElementById("professores-matutino").classList.add("escondido");
-    document.getElementById("professores-vespertino").classList.add("escondido");
+    // esconde todos primeiro
+    const matutino = document.getElementById("professores-matutino");
+    const vespertino = document.getElementById("professores-vespertino");
 
-    // mostrar apenas o turno escolhido
+    matutino.classList.add("escondido");
+    vespertino.classList.add("escondido");
+
+    // mostra apenas o escolhido
     if (turno === "matutino") {
-        document.getElementById("professores-matutino").classList.remove("escondido");
+        matutino.classList.remove("escondido");
     }
 
     if (turno === "vespertino") {
-        document.getElementById("professores-vespertino").classList.remove("escondido");
+        vespertino.classList.remove("escondido");
     }
 }
 
