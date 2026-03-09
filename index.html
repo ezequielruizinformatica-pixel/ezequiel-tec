@@ -60,15 +60,23 @@
   <h2>Qual é sua matéria favorita?</h2>
 
   <div class="painel-botoes">
-    <button class="btn opcao portugues">📖<span>Português</span></button>
-    <button class="btn opcao matematica">➗<span>Matemática</span></button>
-    <button class="btn opcao ciencias">🔬<span>Ciências</span></button>
-    <button class="btn opcao historia">🏺<span>História</span></button>
-    <button class="btn opcao geografia">🌎<span>Geografia</span></button>
-    <button class="btn opcao ingles">🇺🇸<span>Inglês</span></button>
-    <button class="btn opcao edfisica">🏃<span>Educação Física</span></button>
-    <button class="btn opcao artes">🎨<span>Ensino das Artes</span></button>
-    <button class="btn opcao religioso">✝<span>Ensino Religioso</span></button>
+    <button class="btn opcao portugues" onclick="irParaTurno()">📖<span>Português</span></button>
+
+    <button class="btn opcao matematica" onclick="irParaTurno()">➗<span>Matemática</span></button>
+
+    <button class="btn opcao ciencias" onclick="irParaTurno()">🔬<span>Ciências</span></button>
+
+    <button class="btn opcao historia" onclick="irParaTurno()">🏺<span>História</span></button>
+
+    <button class="btn opcao geografia" onclick="irParaTurno()">🌎<span>Geografia</span></button>
+
+    <button class="btn opcao ingles" onclick="irParaTurno()">🇺🇸<span>Inglês</span></button>
+
+    <button class="btn opcao edfisica" onclick="irParaTurno()">🏃<span>Educação Física</span></button>
+
+    <button class="btn opcao artes" onclick="irParaTurno()">🎨<span>Ensino das Artes</span></button>
+
+    <button class="btn opcao religioso" onclick="irParaTurno()">✝<span>Ensino Religioso</span></button>
   </div>
 
   <button class="btn voltar" onclick="voltarParaAluno()">
@@ -77,6 +85,66 @@
   </button>
 </div>
 
+  <!-- ================= TELA TURNO ================= -->
+
+<div id="turno" class="tela escondido">
+  <h2>Seu professor favorito é de qual turno?</h2>
+
+  <div class="painel-botoes">
+
+    <button class="btn opcao matutino" onclick="irParaProfessor()">
+      🌅
+      <span>Matutino</span>
+    </button>
+
+    <button class="btn opcao vespertino" onclick="irParaProfessor()">
+      🌇
+      <span>Vespertino</span>
+    </button>
+
+  </div>
+
+  <button class="btn voltar" onclick="voltarParaMateria()">
+    ⬅
+    <span>Voltar</span>
+  </button>
+</div>
+  
+  <!-- ================= TELA PROFESSOR ================= -->
+
+<div id="professor" class="tela escondido">
+  <h2>Qual é seu professor favorito?</h2>
+
+  <div class="painel-botoes">
+
+    <button class="btn opcao prof1">
+      👩‍🏫
+      <span>Profª Ana</span>
+    </button>
+
+    <button class="btn opcao prof2">
+      👨‍🏫
+      <span>Prof. Carlos</span>
+    </button>
+
+    <button class="btn opcao prof3">
+      👩‍🏫
+      <span>Profª Juliana</span>
+    </button>
+
+    <button class="btn opcao prof4">
+      👨‍🏫
+      <span>Prof. Marcos</span>
+    </button>
+
+  </div>
+
+  <button class="btn voltar" onclick="voltarParaMateria()">
+    ⬅
+    <span>Voltar</span>
+  </button>
+</div>
+  
 <!-- ================= TELA VISITANTE ================= -->
 
 <div id="visitante" class="tela escondido">
