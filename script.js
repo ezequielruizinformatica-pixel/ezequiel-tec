@@ -66,11 +66,10 @@ function irParaProfessor(turno) {
 
     tela.classList.remove("escondido");
 
-    // esconder os dois grupos primeiro
+    // esconder os dois primeiro
     matutino.style.display = "none";
     vespertino.style.display = "none";
 
-    // mostrar apenas o grupo escolhido
     if (turno === "matutino") {
         matutino.style.display = "grid";
     }
