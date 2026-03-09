@@ -60,17 +60,17 @@ function irParaProfessor(turno) {
 
     esconderTodas();
 
-    // abre a tela de professor
-    document.getElementById("professor").classList.remove("escondido");
-
-    // esconde todos primeiro
+    const telaProfessor = document.getElementById("professor");
     const matutino = document.getElementById("professores-matutino");
     const vespertino = document.getElementById("professores-vespertino");
 
+    telaProfessor.classList.remove("escondido");
+
+    // esconder os dois
     matutino.classList.add("escondido");
     vespertino.classList.add("escondido");
 
-    // mostra apenas o escolhido
+    // mostrar apenas o escolhido
     if (turno === "matutino") {
         matutino.classList.remove("escondido");
     }
@@ -79,7 +79,6 @@ function irParaProfessor(turno) {
         vespertino.classList.remove("escondido");
     }
 }
-
 function voltarParaTurno() {
     esconderTodas();
     document.getElementById("turno").classList.remove("escondido");
