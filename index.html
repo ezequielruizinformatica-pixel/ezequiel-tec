@@ -92,16 +92,15 @@
 
   <div class="painel-botoes">
 
-    <button class="btn opcao matutino" onclick="irParaProfessor()">
-      🌅
-      <span>Matutino</span>
-    </button>
+  <button class="btn opcao matutino" onclick="irParaProfessor('matutino')">
+  🌅
+  <span>Matutino</span>
+</button>
 
-    <button class="btn opcao vespertino" onclick="irParaProfessor()">
-      🌇
-      <span>Vespertino</span>
-    </button>
-
+<button class="btn opcao vespertino" onclick="irParaProfessor('vespertino')">
+  🌇
+  <span>Vespertino</span>
+</button>
   </div>
 
   <button class="btn voltar" onclick="voltarParaMateria()">
@@ -113,36 +112,31 @@
   <!-- ================= TELA PROFESSOR ================= -->
 
 <div id="professor" class="tela escondido">
-  <h2>Qual é seu professor favorito?</h2>
 
-  <div class="painel-botoes">
+<h2>Qual é seu professor favorito?</h2>
 
-    <button class="btn opcao prof1">
-      👩‍🏫
-      <span>Profª Ana</span>
-    </button>
+<!-- PROFESSORES DA MANHÃ -->
+<div id="professores-matutino" class="painel-botoes escondido">
 
-    <button class="btn opcao prof2">
-      👨‍🏫
-      <span>Prof. Carlos</span>
-    </button>
+<button class="btn opcao">👩‍🏫<span>Profª Ana</span></button>
+<button class="btn opcao">👨‍🏫<span>Prof. Carlos</span></button>
+<button class="btn opcao">👩‍🏫<span>Profª Juliana</span></button>
 
-    <button class="btn opcao prof3">
-      👩‍🏫
-      <span>Profª Juliana</span>
-    </button>
+</div>
 
-    <button class="btn opcao prof4">
-      👨‍🏫
-      <span>Prof. Marcos</span>
-    </button>
+<!-- PROFESSORES DA TARDE -->
+<div id="professores-vespertino" class="painel-botoes escondido">
 
-  </div>
+<button class="btn opcao">👨‍🏫<span>Prof. Marcos</span></button>
+<button class="btn opcao">👩‍🏫<span>Profª Fernanda</span></button>
+<button class="btn opcao">👨‍🏫<span>Prof. Lucas</span></button>
 
-  <button class="btn voltar" onclick="voltarParaMateria()">
-    ⬅
-    <span>Voltar</span>
-  </button>
+</div>
+
+<button class="btn voltar" onclick="voltarParaTurno()">
+⬅ <span>Voltar</span>
+</button>
+
 </div>
   
 <!-- ================= TELA VISITANTE ================= -->
